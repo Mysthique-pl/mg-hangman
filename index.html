@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HangMan</title>
+</head>
+<body>
+    <h1 class="tittle">HangMan</h1>
+    <p>Category: <span id="category"></span></p>
+    <p id="word" class="word">_ _ _ _</p>
+    <canvas id="gameCanvas" class="hangman" width="300" height="300" style="border:1px solid #416b85;">
+        Your browser does not support the HTML canvas tag</canvas>
+    <div id="alphabet" class="alphabet">
+        <button class="btn alph-btn">A</button>
+        <button class="btn alph-btn">B</button>
+        <button class="btn alph-btn">C</button>
+        <button class="btn alph-btn">D</button>
+        <button class="btn alph-btn">E</button>
+        <button class="btn alph-btn">F</button>
+        <button class="btn alph-btn">G</button>
+        <button class="btn alph-btn">H</button>
+        <button class="btn alph-btn">I</button>
+        <button class="btn alph-btn">J</button>
+        <button class="btn alph-btn">K</button>
+        <button class="btn alph-btn">L</button>
+        <button class="btn alph-btn">M</button>
+        <button class="btn alph-btn">N</button>
+        <button class="btn alph-btn">O</button>
+        <button class="btn alph-btn">P</button>
+        <button class="btn alph-btn">Q</button>
+        <button class="btn alph-btn">R</button>
+        <button class="btn alph-btn">S</button>
+        <button class="btn alph-btn">T</button>
+        <button class="btn alph-btn">U</button>
+        <button class="btn alph-btn">V</button>
+        <button class="btn alph-btn">W</button>
+        <button class="btn alph-btn">X</button>
+        <button class="btn alph-btn">Y</button>
+        <button class="btn alph-btn">Z</button>
+    </div>
+    <div id="game-btns">
+    <button id="start-btn" class="btn main-btn" onclick="startGame()">Start New Game<span class="popup">Starts the game with a new word drawn.</span></button>
+    <button id="reset-btn" class="btn main-btn" onclick="resetGame()">Reset Game<span class="popup">Starts new game with the same word.</span></button>
+    </div>
+
+    <div id="win" class="alert">
+        <p class="text-basic">You have won. Congratulations!</p>
+        <button class="btn main-btn" onclick="this.parentElement.style.display='none';">OK</button>
+    </div>
+
+    <div id="lost" class="alert">
+        <p class="text-basic">You have lost the game.</p>
+        <button class="btn main-btn" onclick="this.parentElement.style.display='none';">OK</button>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
